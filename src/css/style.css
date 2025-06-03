@@ -29,7 +29,8 @@
 
 
 body {
-  color: var(--clr-body);
+  color: var(--clr-text);
+  background-color: var(--clr-body);
   font-family: var(--ff-base, 'system-ui, sans-serif');
   font-size: var(--fs-400, 1.25rem);
   line-height: 1.6;

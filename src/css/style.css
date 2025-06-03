@@ -43,8 +43,16 @@ body {
 .wrapper {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  width: min(100ch, 100% - 4rem);
+  width: calc(100% - 20rem);
   margin-inline: auto;
+}
+
+section {
+  padding-block: 6rem;
+}
+
+img {
+  border-radius: 1rem;
 }
 
 
@@ -151,8 +159,6 @@ nav {
 .home {
   display: grid;
   gap: 3rem;
-  padding: 2rem;
-  padding-block-start: 5rem;
   grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
 
 
@@ -169,6 +175,25 @@ nav {
   }
 
 
+}
+
+/* favourites */
+.favourites {
+  justify-content: center;
+  gap: 2rem;
+
+  & div {
+    text-align: center;
+  }
+}
+
+.products {
+  gap: 3rem;
+  grid-template-columns:repeat(auto-fit, minmax(min(25rem, 100%), 1fr));
+
+  & img {
+    width: 90vw;
+  }
 }
 
 

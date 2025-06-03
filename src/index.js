@@ -1,3 +1,3 @@
-alert("HI!")
+import './css/style.css';
 
 

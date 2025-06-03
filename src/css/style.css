@@ -33,14 +33,17 @@ body {
   color: var(--clr-text);
   background-color: var(--clr-body);
   font-family: var(--ff-base, 'system-ui, sans-serif');
-  font-size: var(--fs-300, 1.125rem);
+  font-size: var(--fs-200, 1rem);
   line-height: 1.6;
   min-height: 100vh;
   min-height: 100dvh;
+
 }
 
 .wrapper {
-  width: min(65ch, 100% - 4rem);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: min(100ch, 100% - 4rem);
   margin-inline: auto;
 }
 
@@ -92,6 +95,8 @@ header {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  font-size: var(--fs-600);
+  font-weight: var(--fw-bold);
 
   & img {
     width: 3rem;
@@ -102,7 +107,8 @@ header {
 /* nav */
 nav {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
+
 
 
   & button {
@@ -111,7 +117,7 @@ nav {
     border: none;
     color: var(--clr-text);
     cursor: pointer;
-    font-size: var(--fs-300);
+    font-size: var(--fs-400);
     padding: 0.25em 0;
     transition: color 0.2s;
 
@@ -139,4 +145,35 @@ nav {
     }
 
   }
+}
+
+/* home */
+.home {
+  display: grid;
+  gap: 3rem;
+  padding: 2rem;
+  padding-block-start: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+
+
+  & div {
+    display: flex;
+    gap:1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  & p {
+    font-size: var(--fs-300);
+  }
+
+
+}
+
+
+/* footer */
+footer {
+  padding-block: 1rem;
+  margin-bottom:0;
 }

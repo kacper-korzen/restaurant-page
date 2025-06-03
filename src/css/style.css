@@ -1,0 +1,70 @@
+@import "reset.css";
+
+:root {
+  --clr-text: hsl(25, 20%, 10%);
+  --clr-body: hsl(36, 34%, 95%);
+  --clr-background: hsl(0, 0%, 100%);
+  --clr-primary: hsl(4, 74%, 55%);
+  --clr-secondary: hsl(122, 30%, 40%);
+  --clr-accent: hsl(45, 90%, 60%);
+
+  --clr-success: hsl(120, 60%, 50%);
+  --clr-error: hsl(0, 80%, 50%);
+
+  --ff-base: 'Lora', serif;
+  --ff-accent: 'Quattrocento', serif;
+
+  --fw-regular: 400;
+  --fw-semi-bold: 700;
+  --fw-bold: 900;
+
+  --fs-300: clamp(1rem, 0.9rem + 0.5vw, 1.2rem);
+  --fs-400: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+  --fs-500: clamp(1.375rem, 1.2rem + 1vw, 1.75rem);
+  --fs-600: clamp(1.75rem, 1.5rem + 1.2vw, 2.25rem);
+  --fs-700: clamp(2.25rem, 1.8rem + 1.6vw, 3rem);
+  --fs-800: clamp(3rem, 2.2rem + 2.5vw, 4rem);
+
+}
+
+
+body {
+  color: var(--clr-body);
+  font-family: var(--ff-base, 'system-ui, sans-serif');
+  font-size: var(--fs-400, 1.25rem);
+  line-height: 1.6;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.wrapper {
+  width: min(65ch, 100% - 4rem);
+  margin-inline: auto;
+}
+
+/* use this to separate headings and paragraphs */
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
+
+h1 {
+  --flow-space: 2em;
+
+  font-size: var(--fs-700);
+  color: var(--clr-primary);
+}
+
+h2 {
+  --flow-space: 1.5em;
+
+  font-size: var(--fs-600);
+  color: var(--clr-secondary) ;
+}
+
+h3{
+  --flow-space: 1.125em;
+
+  font-size: var(--fs-500);
+  color: var(--clr-text);
+}

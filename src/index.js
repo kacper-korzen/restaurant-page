@@ -2,11 +2,24 @@ import './css/style.css';
 import homePage from './pages/home.js';
 
 const content = document.querySelector('#content');
+const navButtons = document.querySelectorAll('nav button');
 
-
-function renderHome() {
-  content.innerHTML = homePage;
+const pages = {
+  homePage,
 }
 
-renderHome();
+navButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const page = button.dataset.page;
+    renderPage(pages[page]);
+  })
+})
+
+function renderPage (page) {
+  content.innerHTML = page;
+}
+
+renderPage(homePage);
+
+
 

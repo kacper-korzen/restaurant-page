@@ -32,20 +32,24 @@ const openingHoursSection = `
   </section>
 `;
 
-const homePage = `
+const headerSection = `
   <section class="home">
-    <div>
-      <h1>„Smak Sycylii: Autentyczne smaki, rodzinna atmosfera”</h2>
-      <p>Poczuj ciepło południowych Włoch w każdym kęsie — ręcznie wyrabiana pizza, świeże składniki i sycylijska tradycja prosto na Twoim stole.</p>
-    </div>
+  <div>
+    <h1>„Smak Sycylii: Autentyczne smaki, rodzinna atmosfera”</h2>
+    <p>Poczuj ciepło południowych Włoch w każdym kęsie — ręcznie wyrabiana pizza, świeże składniki i sycylijska tradycja prosto na Twoim stole.</p>
+  </div>
 
-    <img src="${pizzaImg}" alt="Pizza">
+  <img src="${pizzaImg}" alt="Pizza">
   </section>
-
-  ${favouritesSection}
-
-  ${openingHoursSection}
 `;
+
+
+const homePage = `
+ ${headerSection}
+ ${favouritesSection}
+${openingHoursSection}
+`;
+
 
 
 function renderHome() {

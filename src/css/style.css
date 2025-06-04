@@ -83,6 +83,10 @@ h3 {
   color: var(--clr-text);
 }
 
+p {
+  font-size: var(--fs-400);
+}
+
 .grid {
   display: grid;
 }
@@ -170,15 +174,10 @@ nav {
     align-content: center;
   }
 
-  & p {
-    font-size: var(--fs-300);
-  }
-
-
 }
 
 /* favourites */
-.favourites {
+.centered-grid {
   justify-content: center;
   gap: 2rem;
 

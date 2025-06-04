@@ -5,26 +5,23 @@ const content = document.querySelector('#content');
 const navButtons = document.querySelectorAll('nav button');
 const logo = document.querySelector('.logo-wrapper');
 
+
 const pages = {
-  homePage,
+  home : homePage,
 }
 
 logo.addEventListener('click', () => {
-  renderPage(homePage);
+  homePage(content);
 })
 
 navButtons.forEach(button => {
   button.addEventListener('click', () => {
     const page = button.dataset.page;
-    renderPage(pages[page]);
+    pages[page](content);
   })
 })
 
-function renderPage (page) {
-  content.innerHTML = page;
-}
 
-renderPage(homePage);
-
+document.body.onload = () => homePage(content);
 
 

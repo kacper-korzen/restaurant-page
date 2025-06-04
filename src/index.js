@@ -5,16 +5,10 @@ import favPizza2 from './images/fav-pizza-2.jpg';
 import favDessert from './images/deser.jpg';
 
 
-
-
-function $(selector) {
-  return document.querySelector(selector);
-}
-
-const content = $('#content');
+const content = document.querySelector('#content');
 
 const favouritesSection = `
-  <section class="grid favourites ">
+  <section class="grid centered-grid ">
     <div>
       <h2>Ulubione</h2>
       <p>Ulubione pozycje naszych klientów</p>
@@ -28,11 +22,20 @@ const favouritesSection = `
   </section>
 `;
 
+const openingHoursSection = `
+  <section class="centered-grid">
+    <div>
+      <h2>Godziny otwarcia</h2>
+      <p>Pon - Pt &nbsp;&nbsp; 12:00: - 22:00</p>
+      <p>Sob - Nd &nbsp;&nbsp; 15:00: - 23:00</p>
+    </div>
+  </section>
+`;
 
 const homePage = `
   <section class="home">
     <div>
-      <h2>„Smak Sycylii: Autentyczne smaki, rodzinna atmosfera”</h2>
+      <h1>„Smak Sycylii: Autentyczne smaki, rodzinna atmosfera”</h2>
       <p>Poczuj ciepło południowych Włoch w każdym kęsie — ręcznie wyrabiana pizza, świeże składniki i sycylijska tradycja prosto na Twoim stole.</p>
     </div>
 
@@ -40,6 +43,8 @@ const homePage = `
   </section>
 
   ${favouritesSection}
+
+  ${openingHoursSection}
 `;
 
 

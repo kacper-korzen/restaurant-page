@@ -30,15 +30,9 @@ The site includes multiple pages (Home, Menu, Contact), and switching between th
 1. Clone this repository:
    ```bash
    git clone https://github.com/kacper-korzen/restaurant-page.git
-   cd restaurant-page
-
-   ```bash
-   npm install
-
-   ```bash
-   npm run build
-
-   ```bash
+   cd restaurant-page 
+   npm install 
+   npm run build   
    npm run start
   
 

@@ -195,6 +195,33 @@ nav {
   }
 }
 
+/* menu */
+.cards-wrapper {
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+}
+
+.card {
+  width: fit-content;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: 1px solid var(--clr-text);
+  border-radius: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+
+  & img {
+    width: 20ch;
+    height: auto;
+    justify-self: center;
+  }
+
+  &:hover {
+    background: var(--clr-accent);
+    transform: translateY(-5px);
+  }
+}
 
 /* footer */
 footer {
